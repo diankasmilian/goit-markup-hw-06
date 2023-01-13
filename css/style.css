@@ -813,14 +813,11 @@ textarea {
 
 
 .modal-list {
+    position: relative;
     display: flex;
     flex-direction: column;
 
     margin-bottom: 8px;
-}
-
-.modal-list:last-child {
-    margin-bottom: 16px;
 }
 
 .modal-list textarea::placeholder {
@@ -841,16 +838,10 @@ letter-spacing: 0.04em;
 color: var(--subtle-text);
 }
 
-.cheakbox-list label {
-    margin: 0;
-    margin-left: 8px;
-
-    color: #757575;
-}
-
 .modal-input {
+
     margin: 0;
-    padding: 11px 19px;
+    padding: 11px 38px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
@@ -858,6 +849,7 @@ border-radius: 4px;
 
 .modal-area {
     padding: 8px 16px;
+    margin-bottom: 8px;
 }
 
 .cheakbox-list {
@@ -865,15 +857,53 @@ border-radius: 4px;
     align-items: center;
 
     margin-bottom: 24px;
+    
 }
 
 .cheakbox-link {
     color: var(--primary-brand);
+    
 }
 
-.cheakbox-link input[type="chechbox"] {
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     appearance: none;
+
+     position: absolute;
+}
+
+.checkbox-label {
+    position: relative;
+
+    margin: 0;
+    padding-left: 24px;
+
+    color: #757575;
+}
+
+.checkbox-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 16px;
+    height: 16px;
+
+    border: 1.25px solid #2E2F42;
+border-radius: 2px;
+fill: transparent;
+transition: background-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked ~ .checkbox-icon {
+    background-color: var(--primary-brand);
+    fill: var(--light);
 
 }
+
 
 .modal-btn-container {
     display: flex;
@@ -903,4 +933,21 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-btn:hover, 
 .modal-btn:focus {
     background-color: var(--pressed-state);
+}
+
+.form-icon {
+    position: absolute;
+    top: 30px;
+    left: 16px;
+
+    fill: var(--dark);
+}
+
+.modal-input:focus {
+    border-color: var(--primary-brand);
+    outline: none;
+}
+
+.modal-input:focus + .form-icon {
+fill: var(--primary-brand);
 }

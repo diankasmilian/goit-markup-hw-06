@@ -1,0 +1,138 @@
+@media  screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;
+    }
+
+    /* ------------------Header--------------- */
+
+    .navigation-list {
+        display: flex;
+        margin-left: 76px;
+        gap: 40px;
+    }
+
+    .address-list {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 332px;
+        gap: 40px;
+    }
+
+    .address {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /* ------------------Hero--------------- */
+
+    .hero-section {
+        max-width: 1440px;
+        min-height: 600px;
+        padding: 188px 0;
+
+        background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+        url(../images/heroimage.jpg);
+    }
+
+    /* ------------------Description--------------- */
+
+    .description-section {
+        padding: 120px 0;
+    }
+
+    .description-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .icon-description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 264px;
+        height: 112px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+
+        background-color: var(--light);   
+    }
+
+    /* ------------------Work--------------- */
+
+    .work-section {
+        display: flex;
+    }
+
+    /* ------------------Team--------------- */
+
+    .team-section {
+        padding: 120px 0;
+    }
+
+    .team-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .team-item {
+        width: 264px;
+    }
+
+    .team-link {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+    
+    border-radius: 50%;
+    background-color: var(--primary-brand);
+    }
+
+    /* ------------------Customers--------------- */
+
+    .customers-section {
+        padding: 120px 0;
+    }
+
+    .customers-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    /* ------------------Footer--------------- */
+
+    .footer-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        padding-left: 0;
+        gap: 0;
+    }
+
+    .social-container {
+        margin-left: 120px;
+    }
+
+    .subscribe-container {
+        margin-left: 80px;
+    }
+
+    .subscribe-form {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+}
